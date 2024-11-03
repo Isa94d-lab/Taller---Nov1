@@ -1,5 +1,7 @@
+/* Importa el tipo de letra */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+/* Las propiedades que tendra el cuerpo de la pagina*/
 body{
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
@@ -8,7 +10,7 @@ body{
     place-items: center;
 }
 
-
+/* Propiedades que tendra la tabla */
 table {
     background-color: rgb(185, 185, 185);
     text-align: center;
@@ -16,16 +18,30 @@ table {
     border-collapse: collapse;
 }
 
+/* Propiedades del titulo */
 h1 {
     padding-top: 100px;
+    padding-bottom: 50px;
     margin: auto;
 }
 
-
+/* Propiedades de cada espacio de la tabla */
 th {
     border: solid 1px black;
 }
 
-tr {
-    margin: 100px;
+/* Propiedad adentro de cada espacio */
+.inter {
+    padding: 70px;
+}
+
+/* Las filas pares se les pondra un color gris */
+tr:nth-child(even){
+    background-color: gray;
+}
+
+/* Cuando se pase el maus por encima cada fila, se cambaira el color */
+tr:hover{
+    background-color: black;
+    color: white;
 }
